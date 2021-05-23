@@ -26,4 +26,12 @@ on dm.dept_no = d.dept_no
 left join employees as e
 on dm.emp_no = e.emp_no;
 
+#5*
+SELECT first_name,
+last_name,
+sex
+FROM employees
+WHERE last_name like 'B%'
+	AND first_name like 'Hercules'
+;
 
