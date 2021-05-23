@@ -41,14 +41,16 @@ WHERE last_name like 'B%'
 	AND first_name like 'Hercules'
 ;
 
-#6
-SELECT d.*, e.*, de.*
+#6*
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
 FROM dept_emp as de
 right join departments as d
 on de.dept_no = d.dept_no
 left join employees as e
 on de.emp_no = e.emp_no
+WHERE d.dept_name = 'Sales'
 ;
+
 
 #7
 SELECT d.*, e.*, de.*
