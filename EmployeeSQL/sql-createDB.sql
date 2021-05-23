@@ -9,9 +9,8 @@ CREATE TABLE dept_emp (
 );
 
 CREATE TABLE dept_manager (
-
-
-
+    dept_no VARCHAR,
+    emp_no VARCHAR
 );
 
 CREATE TABLE employees (
