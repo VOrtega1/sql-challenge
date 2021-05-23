@@ -8,6 +8,7 @@ Enity Relationship Diagram Tool (ERD) was downloaded to in order to visualize th
  Used ER diagram tool to make connections between tables using primary keys. Simplified the join of tables. Was able to sort through data, used group by, pulled specific criteria from 6 different tables.
 
 Practice creating a new server, database, schemas and tables using existing csv files in PostgreSQL 13. 
+
 Joined Tables in order to pull details from each employee, including employee numbers, last name, first names, salary, titles and department names for each employee.
 
 
