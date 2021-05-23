@@ -1,6 +1,7 @@
 PROJECT TITLE: SQL Challenge
 
 PostgreSQL 13 in order to move csv files to a Server. Created a database to hold those CSV and imported the csv to the tables in order to view files.
+
 Visual Studio Code was used to save files as .sql 
 Enity Relationship Diagram Tool (ERD) was downloaded to in order to visualize the inter-relationships between the database tables and their columns.
 
