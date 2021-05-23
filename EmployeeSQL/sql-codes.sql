@@ -51,6 +51,14 @@ on de.dept_no = d.dept_no
 left join employees as e
 on de.emp_no = e.emp_no;
 
+#8*
+SELECT last_name, COUNT(*)
+FROM employees GROUP BY last_name
+	ORDER BY "last_name" DESC
+;
+
+
+
 
 
 
