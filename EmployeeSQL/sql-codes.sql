@@ -11,13 +11,17 @@ FROM employees
 Where hire_date like '%86'
 ;
 
-#3
-SELECT de.*, e.*, t.*
-FROM employees as e
-right join titles as t
+#3*
+SELECT de.dept_no, e.emp_no, e.first_name, e.last_name, t.*, d.dept_name
+FROM dept_emp as de
+right join departments as d
+on de.dept_no = de.dept_no
+left join employees as e
+on e.emp_no = de.emp_no
+inner join titles as t
 on e.emp_title = t.title_id
-left join dept_emp as de
-on e.emp_no = de.emp_no;
+Where t.title_id = 'm0001'
+;
 
 #4
 SELECT dm.*, d.*, e.*
