@@ -1,8 +1,9 @@
 #1
-SELECT e.*, s.* 
+SELECT e.emp_no, e.first_name, e.last_name, e.sex, s.salary 
 FROM employees as e
-inner join salaries as s
-on e.emp_no = s.emp_no;
+right join salaries as s
+on e.emp_no = s.emp_no
+;
 
 #2*
 SELECT first_name, last_name, hire_date 
