@@ -25,9 +25,8 @@ CREATE TABLE employees (
 );
 
 CREATE TABLE salaries (
-    
-
-
+    emp_no INT,
+    salary INT
 );
 
 CREATE TABLE titles (
