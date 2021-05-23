@@ -47,7 +47,8 @@ FROM dept_emp as de
 right join departments as d
 on de.dept_no = d.dept_no
 left join employees as e
-on de.emp_no = e.emp_no;
+on de.emp_no = e.emp_no
+;
 
 #7
 SELECT d.*, e.*, de.*
@@ -55,7 +56,8 @@ FROM dept_emp as de
 right join departments as d
 on de.dept_no = d.dept_no
 left join employees as e
-on de.emp_no = e.emp_no;
+on de.emp_no = e.emp_no
+;
 
 #8*
 SELECT last_name, COUNT(*)
