@@ -1,4 +1,4 @@
-#1
+#1*
 SELECT e.emp_no, e.first_name, e.last_name, e.sex, s.salary 
 FROM employees as e
 right join salaries as s
