@@ -24,15 +24,16 @@ CREATE TABLE employees (
 
 );
 
+
 CREATE TABLE salaries (
     emp_no INT,
     salary INT
 );
 
+
 CREATE TABLE titles (
-    
-
-
+    title_id VARCHAR,
+    title VARCHAR
 );
 
 
