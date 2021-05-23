@@ -23,13 +23,14 @@ on e.emp_title = t.title_id
 Where t.title_id = 'm0001'
 ;
 
-#4
-SELECT dm.*, d.*, e.*
-FROM dept_manager as dm
+#4*
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name, de.dept_no
+FROM dept_emp as de
 right join departments as d
-on dm.dept_no = d.dept_no
+on de.dept_no = d.dept_no
 left join employees as e
-on dm.emp_no = e.emp_no;
+on de.emp_no = e.emp_no
+;
 
 #5*
 SELECT first_name,
